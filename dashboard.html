@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IDS Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>IDS Dashboard</h1>
+</header>
+
+<section class="stats">
+    <div class="card">Total Traffic: <span id="traffic">0</span></div>
+    <div class="card">Threats Detected: <span id="threats">0</span></div>
+    <div class="card">Blocked IPs: <span id="blocked">0</span></div>
+</section>
+
+<section class="logs">
+    <h2>Live Threat Logs</h2>
+    <ul id="logList"></ul>
+</section>
+
+<section class="upload">
+    <h2>Upload Log File</h2>
+    <input type="file" id="fileUpload">
+    <button onclick="uploadLog()">Upload</button>
+</section>
+
+<button onclick="logout()">Logout</button>
+
+<script src="script.js"></script>
+</body>
+</html>
